@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from apitest import views
+from apptest import app_test_views
 from bug import bug_views
 from product import pro_views
 from set import set_views
@@ -38,4 +39,7 @@ urlpatterns = [
     path("set_manage/", set_views.set_manage, name="set_manage"),
     # 用户管理
     path("user/", set_views.set_user, name="user"),
+    # app 用例管理
+    path("app_case_manage/", app_test_views.app_case_manage, name="app_case_manage"),
+    path("app_case_step_manage/", app_test_views.app_case_step_manage, name="app_case_step_manage"),
 ]

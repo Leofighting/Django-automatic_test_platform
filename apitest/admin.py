@@ -21,3 +21,4 @@ class ApisAdmin(admin.TabularInline):
 
 admin.site.register(ApiTest, ApiTestAdmin)
 admin.site.register(Apis)
+
