@@ -1,3 +1,4 @@
+import pymysql
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
@@ -83,4 +84,43 @@ def apis_manage(request):
     return render(request, "apis_manage.html", {
         "user": username,
         "apiss": apis_list
+    })
+
+
+@login_required
+def test_report(request):
+    username = request.session.get("user", "")
+    apis_list = Apis.objects.all()
+    apis_count = Apis.objects.all().count()
+    db = pymysql.connect(user="root", db="automatic", passwd="123qwe", host="127.0.0.1")
+    cursor = db.cursor()
+    sql1 = "select count(id) from apitest_apis where apitest_apis.api_status=1"
+    aa = cursor.execute(sql1)
+    apis_pass_count = [row[0] for row in cursor.fetchmany(aa)][0]
+
+    sql2 = "select count(id) from apitest_apis where apitest_apis.api_status=0"
+    bb = cursor.execute(sql2)
+    apis_fail_count = [row[0] for row in cursor.fetchmany(bb)][0]
+    db.close()
+    return render(request, "report.html", {
+        "user": username,
+        "apiss": apis_list,
+        "apiscounts": apis_count,
+        "apis_pass_counts": apis_pass_count,
+        "apis_fail_counts": apis_fail_count
+    })
+
+
+def left(request):
+    return render(request, "left.html")
+
+
+@login_required
+def apisearch(request):
+    username = request.session.get("user", "")
+    search_apitestname = request.GET.get("apitestname", "")
+    apitest_list = ApiTest.objects.filter(apitest_name__icontains=search_apitestname)
+    return render(request, "apitest_manage.html", {
+        "user": username,
+        "apitests": apitest_list
     })

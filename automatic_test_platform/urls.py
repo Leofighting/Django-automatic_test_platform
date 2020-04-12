@@ -28,6 +28,9 @@ urlpatterns = [
     path("login/", views.login, name="login"),
     path("home/", views.home, name="home"),
     path("logout/", views.logout, name="logout"),
+    path("left/", views.left, name="left"),
+    # 搜索
+    path("apisearch/", views.apisearch, name="apisearch"),
     # 接口测试管理
     path("apitest_manage/", views.apitest_manage, name="apitest_manage"),
     path("apistep_manage/", views.apistep_manage, name="apistep_manage"),
@@ -43,7 +46,10 @@ urlpatterns = [
     # app 用例管理
     path("app_case_manage/", app_test_views.app_case_manage, name="app_case_manage"),
     path("app_case_step_manage/", app_test_views.app_case_step_manage, name="app_case_step_manage"),
+    path("apptest_report/", app_test_views.apptest_report, name="apptest_report"),
     # web 用例管理
     path("web_case_manage/", web_views.web_case_manage, name="web_case_manage"),
     path("web_case_step_manage/", web_views.web_case_step_manage, name="web_case_step_manage"),
+    # 测试报告
+    path("test_report/", views.test_report, name="test_report"),
 ]

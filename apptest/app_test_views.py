@@ -27,3 +27,9 @@ def app_case_step_manage(request):
         "user": username,
         "app_case_steps": app_case_step_list
     })
+
+
+@login_required
+def apptest_report(request):
+    username = request.session.get("user", "")
+    return render(request, "apptest_report.html")

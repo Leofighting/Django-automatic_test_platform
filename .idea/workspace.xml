@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd726d10-9917-4e48-9a51-69703da0042d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webtest/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webtest/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automatic_test_platform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_test_platform/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apitest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apptest/app_test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/app_test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automatic_test_platform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_test_platform/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app_test_step_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app_test_step_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/apis_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apis_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/apistep_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/apitest_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app_case_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/templates/app_case_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app_test_step_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/templates/app_test_step_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bug_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/bug/templates/bug_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/set_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/set/templates/set_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/set_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/set/templates/set_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web_case_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webtest/templates/web_case_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web_case_step_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webtest/templates/web_case_step_manage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +70,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apitest/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\测试\automatic_test_platform\apitest\templates" />
+      <recent name="E:\测试\automatic_test_platform\apptest\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\测试\automatic_test_platform\webtest\templates" />
+      <recent name="E:\测试\automatic_test_platform\apptest\templates" />
+      <recent name="E:\测试\automatic_test_platform\set\templates" />
+      <recent name="E:\测试\automatic_test_platform\bug\templates" />
+      <recent name="E:\测试\automatic_test_platform\apitest\templates" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="automatic_test_platform" type="Python.DjangoServer" factoryName="Django server">
@@ -98,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586596546528</updated>
       <workItem from="1586596548217" duration="11080000" />
-      <workItem from="1586653086920" duration="12323000" />
+      <workItem from="1586653086920" duration="26010000" />
     </task>
     <servers />
   </component>
@@ -106,26 +131,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1145" height="276" key="GridCell.Tab.0.bottom" timestamp="1586676631659">
+    <state x="1099" y="72" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586691906202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586676631659" />
-    <state width="1145" height="276" key="GridCell.Tab.0.center" timestamp="1586676631659">
+    <state x="1099" y="72" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586691906202" />
+    <state width="1145" height="276" key="GridCell.Tab.0.bottom" timestamp="1586696168453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586676631659" />
-    <state width="1145" height="276" key="GridCell.Tab.0.left" timestamp="1586676631659">
+    <state width="1145" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168453" />
+    <state width="1145" height="276" key="GridCell.Tab.0.center" timestamp="1586696168453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586676631659" />
-    <state width="1145" height="276" key="GridCell.Tab.0.right" timestamp="1586676631659">
+    <state width="1145" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168453" />
+    <state width="1145" height="276" key="GridCell.Tab.0.left" timestamp="1586696168452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586676631659" />
-    <state x="1124" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1586663350865">
+    <state width="1145" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168452" />
+    <state width="1145" height="276" key="GridCell.Tab.0.right" timestamp="1586696168453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1124" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586663350865" />
+    <state width="1145" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168453" />
+    <state x="1046" y="225" width="647" height="534" key="find.popup" timestamp="1586691931983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1046" y="225" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586691931983" />
+    <state x="1124" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1586693477539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1124" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586693477539" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
