@@ -20,6 +20,7 @@ from apptest import app_test_views
 from bug import bug_views
 from product import pro_views
 from set import set_views
+from webtest import web_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -42,4 +43,7 @@ urlpatterns = [
     # app 用例管理
     path("app_case_manage/", app_test_views.app_case_manage, name="app_case_manage"),
     path("app_case_step_manage/", app_test_views.app_case_step_manage, name="app_case_step_manage"),
+    # web 用例管理
+    path("web_case_manage/", web_views.web_case_manage, name="web_case_manage"),
+    path("web_case_step_manage/", web_views.web_case_step_manage, name="web_case_step_manage"),
 ]

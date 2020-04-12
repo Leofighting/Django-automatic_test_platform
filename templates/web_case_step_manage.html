@@ -18,11 +18,11 @@
         </ul>
     </div>
 </nav>
-<!-- 流程测试步骤-->
-<div class="row" style="padding-top: 70px;">
+<!-- 用例步骤列表-->
+<div class="row" style="padding-top: 50px;">
     <div class="col-md-11">
         <table class="table table-striped">
-            <thead>
+            <thead class="head">
             <tr>
                 <th>所属产品</th>
                 <th>所属用例</th>
@@ -30,31 +30,25 @@
                 <th>定位方式</th>
                 <th>控件元素</th>
                 <th>操作方法</th>
-                <th>测试数据
-                </th>
+                <th>测试数据</th>
                 <th>验证数据</th>
                 <th>测试结果</th>
                 <th>时间</th>
             </tr>
             </thead>
             <tbody>
-            {% for appcasestep in app_case_steps %}
+            {% for webcasestep in web_case_steps %}
                 <tr>
-                    <td>{{ appcasestep.app_case.product.product_name }}</td>
-                    <td>case{{ appcasestep.app_case.id }}:{{ appcasestep.app_case.app_case_name }}</td>
-                    <td>{{ appcasestep.app_test_step }}:{{ appcasestep.app_test_obj_name }}</td>
-                    <td>{{ appcasestep.app_find_method }}</td>
-                    <td>{{ appcasestep.app_element }}</td>
-                    <td>{{ appcasestep.app_opt_method }}</td>
-                    <td>{{ appcasestep.app_test_data }}</td>
-                    <td>{{ appcasestep.app_assert_data }}</td>
-                    <td>{% if appcasestep.app_test_result == 1 %}
-                        <a style='color:green'>{{ appcasestep.app_test_result }}</a>
-                    {% else %}
-                        <a style='color:red'>{{ appcasestep.app_test_result }}</a>
-                    {% endif %}
-                    </td>
-                    <td>{{ appcasestep.create_time }}</td>
+                    <td>{{ webcasestep.web_case.product.product_name }}</td>
+                    <td>case{{ webcasestep.web_case.id }}:{{ webcasestep.web_case.web_case_name }}</td>
+                    <td>{{ webcasestep.web_test_step }}:{{ webcasestep.web_test_obj_name }}</td>
+                    <td>{{ webcasestep.web_find_method }}</td>
+                    <td>{{ webcasestep.web_element }}</td>
+                    <td>{{ webcasestep.web_opt_method }}</td>
+                    <td>{{ webcasestep.web_test_data }}</td>
+                    <td>{{ webcasestep.web_assert_data }}</td>
+                    <td>{{ webcasestep.web_test_result }}</td>
+                    <td>{{ webcasestep.create_time }}</td>
                 </tr>
             {% endfor %}
             </tbody>

@@ -3,6 +3,7 @@ from django.contrib import admin
 from apitest.models import Apis
 from apptest.models import AppCase
 from product.models import Product
+from webtest.models import WebCase
 
 
 class ApisAdmin(admin.TabularInline):
@@ -19,9 +20,17 @@ class AppCaseAdmin(admin.TabularInline):
     extra = 1
 
 
+class WebCaseAdmin(admin.TabularInline):
+    list_display = [
+        "web_case_name", "web_test_result", "create_time", "id", "product"
+    ]
+    model = WebCase
+    extra = 1
+
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = ["product_name", "product_desc", "product_owner", "create_time", "id"]
-    inlines = [ApisAdmin, AppCaseAdmin]
+    inlines = [ApisAdmin, AppCaseAdmin, WebCaseAdmin]
 
 
 admin.site.register(Product)
