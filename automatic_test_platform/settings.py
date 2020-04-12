@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apitest',
     "product",
-    "bootstrap4"
+    "bootstrap4",
+    "bug",
+    "set",
 ]
 
 MIDDLEWARE = [

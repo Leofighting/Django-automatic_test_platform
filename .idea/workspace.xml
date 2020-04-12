@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd726d10-9917-4e48-9a51-69703da0042d" name="Default Changelist" comment="" />
+    <list default="true" id="bd726d10-9917-4e48-9a51-69703da0042d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bug/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bug/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/set/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/set/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automatic_test_platform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_test_platform/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automatic_test_platform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_test_platform/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,15 +42,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aOB1n53cs7wb5ESLsG5tIfKPQv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -82,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586596546528</updated>
       <workItem from="1586596548217" duration="11080000" />
-      <workItem from="1586653086920" duration="1880000" />
+      <workItem from="1586653086920" duration="5139000" />
     </task>
     <servers />
   </component>
@@ -90,22 +107,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1586615220369">
+    <state width="1042" height="276" key="GridCell.Tab.0.bottom" timestamp="1586655379539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586615220369" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1586615220368">
+    <state width="1042" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586655379539" />
+    <state width="1042" height="276" key="GridCell.Tab.0.center" timestamp="1586655379539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586615220368" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1586615220368">
+    <state width="1042" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586655379539" />
+    <state width="1042" height="276" key="GridCell.Tab.0.left" timestamp="1586655379539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586615220368" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1586615220368">
+    <state width="1042" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586655379539" />
+    <state width="1042" height="276" key="GridCell.Tab.0.right" timestamp="1586655379539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586615220368" />
+    <state width="1042" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586655379539" />
     <state x="1124" y="231" key="search.everywhere.popup" timestamp="1586599826729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

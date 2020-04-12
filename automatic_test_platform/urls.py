@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from apitest import views
+from bug import bug_views
 from product import pro_views
+from set import set_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,9 +26,16 @@ urlpatterns = [
     path("login/", views.login, name="login"),
     path("home/", views.home, name="home"),
     path("logout/", views.logout, name="logout"),
+    # 接口测试管理
     path("apitest_manage/", views.apitest_manage, name="apitest_manage"),
     path("apistep_manage/", views.apistep_manage, name="apistep_manage"),
     path("apis_manage/", views.apis_manage, name="apis_manage"),
+    # 产品管理
     path("product_manage/", pro_views.product_manage, name="product_manage"),
-
+    # bug 管理
+    path("bug_manage/", bug_views.bug_manage, name="bug_manage"),
+    # 设置管理
+    path("set_manage/", set_views.set_manage, name="set_manage"),
+    # 用户管理
+    path("user/", set_views.set_user, name="user"),
 ]
