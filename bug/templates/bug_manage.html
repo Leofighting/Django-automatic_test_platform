@@ -60,8 +60,15 @@
 
 <!--bug 列表-->
 <div class="row" style="padding-top: 70px;">
-    <div class="col-md-11">
-        <table class="table table-striped">
+    <div class="col-md-12">
+        <table class="table table-striped" style="table-layout: fixed;">
+            <style>
+                td {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            </style>
             <thead>
             <tr>
                 <th>ID</th>
