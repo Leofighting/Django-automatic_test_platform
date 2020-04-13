@@ -5,12 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apitest/templates/apis_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apis_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apptest/templates/app_case_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/templates/app_case_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bug/templates/bug_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/bug/templates/bug_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/templates/product_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set/templates/set_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/set/templates/set_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set/templates/set_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/set/templates/set_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webtest/templates/web_case_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webtest/templates/web_case_manage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +112,7 @@
       <updated>1586596546528</updated>
       <workItem from="1586596548217" duration="11080000" />
       <workItem from="1586653086920" duration="26010000" />
-      <workItem from="1586737132366" duration="10579000" />
+      <workItem from="1586737132366" duration="11004000" />
     </task>
     <servers />
   </component>
