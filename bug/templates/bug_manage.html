@@ -63,6 +63,9 @@
 </div>
 <!--统计和翻页功能-->
 <span style="position:absolute; right:100px; bottom:30px;"> {# 把翻页功能固定显示在右下角#}
+<div style="position:absolute; right:100px; width:100px; ">
+<tr><th>总数</th><td>{{ bugcounts }}</td></tr> {# 前端读取定义的变量#}
+</div>
 <div class="container">
  <ul class="pagination" id="pager">
  {# 上一页链接开始#}

@@ -61,6 +61,7 @@ def apitest_manage(request):
     :return: 跳转到接口管理页面，并输出所有接口用例
     """
     apitest_list = ApiTest.objects.all()
+    apitest_count = apitest_list.count()
     username = request.session.get("user", "")
     paginator = Paginator(apitest_list, 5)
     page = request.GET.get("page", 1)
@@ -73,7 +74,8 @@ def apitest_manage(request):
         apitest_list = paginator.page(paginator.num_pages)
     return render(request, "apitest_manage.html", {
         "user": username,
-        "apitests": apitest_list
+        "apitests": apitest_list,
+        "apitestcounts": apitest_count
     })
 
 
@@ -100,6 +102,7 @@ def apistep_manage(request):
 def apis_manage(request):
     username = request.session.get("user", "")
     apis_list = Apis.objects.all()
+    apis_count = apis_list.count()
     paginator = Paginator(apis_list, 5)
     page = request.GET.get("page", 1)
     currentPage = int(page)
@@ -111,7 +114,8 @@ def apis_manage(request):
         apis_list = paginator.page(paginator.num_pages)
     return render(request, "apis_manage.html", {
         "user": username,
-        "apiss": apis_list
+        "apiss": apis_list,
+        "apiscounts": apis_count
     })
 
 

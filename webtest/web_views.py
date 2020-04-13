@@ -8,6 +8,7 @@ from webtest.models import WebCase, WebCaseStep
 @login_required
 def web_case_manage(request):
     web_case_list = WebCase.objects.all()
+    web_case_count = web_case_list.count()
     username = request.session.get("user", "")
     paginator = Paginator(web_case_list, 5)
     page = request.GET.get("page", 1)
@@ -20,7 +21,8 @@ def web_case_manage(request):
         web_case_list = paginator.page(paginator.num_pages)
     return render(request, "web_case_manage.html", {
         "user": username,
-        "web_cases": web_case_list
+        "web_cases": web_case_list,
+        "webcasecounts": web_case_count
     })
 
 

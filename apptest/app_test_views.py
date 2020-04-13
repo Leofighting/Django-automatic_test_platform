@@ -13,6 +13,7 @@ def app_case_manage(request):
     :return: 跳转到app用例管理页面
     """
     app_case_list = AppCase.objects.all()
+    app_case_count = app_case_list.count()
     username = request.session.get("user", "")
     paginator = Paginator(app_case_list, 5)
     page = request.GET.get("page", 1)
@@ -25,7 +26,8 @@ def app_case_manage(request):
         app_case_list = paginator.page(paginator.num_pages)
     return render(request, "app_case_manage.html", {
         "user": username,
-        "app_cases": app_case_list
+        "app_cases": app_case_list,
+        "appcasecounts": app_case_count
     })
 
 
