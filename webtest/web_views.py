@@ -10,6 +10,8 @@ def web_case_manage(request):
     web_case_list = WebCase.objects.all()
     web_case_count = web_case_list.count()
     username = request.session.get("user", "")
+    web_case_id = request.GET.get("webcase.id", None)
+    web_case = WebCase.objects.get(id=web_case_id)
     paginator = Paginator(web_case_list, 5)
     page = request.GET.get("page", 1)
     currentPage = int(page)
@@ -22,7 +24,8 @@ def web_case_manage(request):
     return render(request, "web_case_manage.html", {
         "user": username,
         "web_cases": web_case_list,
-        "webcasecounts": web_case_count
+        "webcasecounts": web_case_count,
+        "webcase": web_case
     })
 
 

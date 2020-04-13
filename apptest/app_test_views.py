@@ -35,6 +35,8 @@ def app_case_manage(request):
 def app_case_step_manage(request):
     username = request.session.get("user", "")
     app_case_step_list = AppCaseStep.objects.all()
+    appcase_id = request.GET.get("appcase.id", None)
+    appcase = AppCase.objects.get(id=appcase_id)
     paginator = Paginator(app_case_step_list, 5)
     page = request.GET.get("page", 1)
     currentPage = int(page)
@@ -46,7 +48,8 @@ def app_case_step_manage(request):
         app_case_step_list = paginator.page(paginator.num_pages)
     return render(request, "app_case_step_manage.html", {
         "user": username,
-        "app_case_steps": app_case_step_list
+        "app_case_steps": app_case_step_list,
+        "appcase": appcase
     })
 
 

@@ -83,6 +83,8 @@ def apitest_manage(request):
 def apistep_manage(request):
     username = request.session.get("user", "")
     apistep_list = ApiStep.objects.all()
+    apitest_id = request.GET.get("apitest.id", None)
+    apitest = ApiTest.objects.get(id=apitest_id)
     paginator = Paginator(apistep_list, 5)
     page = request.GET.get("page", 1)
     currentPage = int(page)
@@ -94,7 +96,8 @@ def apistep_manage(request):
         apistep_list = paginator.page(paginator.num_pages)
     return render(request, "apistep_manage.html", {
         "user": username,
-        "apisteps": apistep_list
+        "apisteps": apistep_list,
+        "apitest": apitest
     })
 
 
@@ -167,3 +170,7 @@ def apis_search(request):
         "user": username,
         "apiss": apis_list
     })
+
+
+def welcome(request):
+    return render(request, "welcome.html")

@@ -29,6 +29,7 @@ urlpatterns = [
     path("home/", views.home, name="home"),
     path("logout/", views.logout, name="logout"),
     path("left/", views.left, name="left"),
+    path("welcome/", views.welcome, name="welcome"),
 
     # 接口测试管理
     path("apitest_manage/", views.apitest_manage, name="apitest_manage"),
