@@ -1,7 +1,7 @@
 import pymysql
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 
@@ -63,7 +63,14 @@ def apitest_manage(request):
     apitest_list = ApiTest.objects.all()
     username = request.session.get("user", "")
     paginator = Paginator(apitest_list, 5)
-    page = request.GET.get("page")
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        apitest_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        apitest_list = paginator.page(1)
+    except EmptyPage:
+        apitest_list = paginator.page(paginator.num_pages)
     return render(request, "apitest_manage.html", {
         "user": username,
         "apitests": apitest_list
@@ -74,6 +81,15 @@ def apitest_manage(request):
 def apistep_manage(request):
     username = request.session.get("user", "")
     apistep_list = ApiStep.objects.all()
+    paginator = Paginator(apistep_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        apistep_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        apistep_list = paginator.page(1)
+    except EmptyPage:
+        apistep_list = paginator.page(paginator.num_pages)
     return render(request, "apistep_manage.html", {
         "user": username,
         "apisteps": apistep_list
@@ -84,6 +100,15 @@ def apistep_manage(request):
 def apis_manage(request):
     username = request.session.get("user", "")
     apis_list = Apis.objects.all()
+    paginator = Paginator(apis_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        apis_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        apis_list = paginator.page(1)
+    except EmptyPage:
+        apis_list = paginator.page(paginator.num_pages)
     return render(request, "apis_manage.html", {
         "user": username,
         "apiss": apis_list

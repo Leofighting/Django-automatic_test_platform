@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render
 
 from apptest.models import AppCase, AppCaseStep
@@ -13,6 +14,15 @@ def app_case_manage(request):
     """
     app_case_list = AppCase.objects.all()
     username = request.session.get("user", "")
+    paginator = Paginator(app_case_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        app_case_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        app_case_list = paginator.page(1)
+    except EmptyPage:
+        app_case_list = paginator.page(paginator.num_pages)
     return render(request, "app_case_manage.html", {
         "user": username,
         "app_cases": app_case_list
@@ -23,6 +33,15 @@ def app_case_manage(request):
 def app_case_step_manage(request):
     username = request.session.get("user", "")
     app_case_step_list = AppCaseStep.objects.all()
+    paginator = Paginator(app_case_step_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        app_case_step_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        app_case_step_list = paginator.page(1)
+    except EmptyPage:
+        app_case_step_list = paginator.page(paginator.num_pages)
     return render(request, "app_case_step_manage.html", {
         "user": username,
         "app_case_steps": app_case_step_list
@@ -32,7 +51,9 @@ def app_case_step_manage(request):
 @login_required
 def apptest_report(request):
     username = request.session.get("user", "")
-    return render(request, "apptest_report.html")
+    return render(request, "apptest_report.html", {
+        "user": username
+    })
 
 
 @login_required

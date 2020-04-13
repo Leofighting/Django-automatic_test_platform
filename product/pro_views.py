@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render
 from product.models import Product
 
@@ -6,9 +7,20 @@ from product.models import Product
 def product_manage(request):
     username = request.session.get("user", "")
     product_list = Product.objects.all()
+    product_count = product_list.count()
+    paginator = Paginator(product_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        product_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        product_list = paginator.page(1)
+    except EmptyPage:
+        product_list = paginator.page(paginator.num_pages)
     return render(request, "product_manage.html", {
         "user": username,
-        "products": product_list
+        "products": product_list,
+        "productcounts": product_count
     })
 
 

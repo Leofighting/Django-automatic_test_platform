@@ -3,20 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="bd726d10-9917-4e48-9a51-69703da0042d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apitest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apitest/templates/apis_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apis_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apistep_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/templates/apitest_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apitest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apptest/app_test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/app_test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apptest/templates/app_case_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/templates/app_case_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apptest/templates/app_test_step_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/templates/app_case_step_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automatic_test_platform/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_test_platform/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apptest/templates/app_case_step_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/apptest/templates/app_case_step_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bug/bug_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bug/bug_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bug/templates/bug_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/bug/templates/bug_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/pro_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/pro_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/templates/product_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/templates/product_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/set/set_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/set/set_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/set/templates/set_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/set/templates/set_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set/templates/set_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/set/templates/set_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webtest/templates/web_case_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webtest/templates/web_case_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webtest/templates/web_case_step_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webtest/templates/web_case_step_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webtest/web_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtest/web_views.py" afterDir="false" />
@@ -124,7 +124,7 @@
       <updated>1586596546528</updated>
       <workItem from="1586596548217" duration="11080000" />
       <workItem from="1586653086920" duration="26010000" />
-      <workItem from="1586737132366" duration="4121000" />
+      <workItem from="1586737132366" duration="7677000" />
     </task>
     <servers />
   </component>
@@ -136,22 +136,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1099" y="72" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586691906202" />
-    <state width="1145" height="276" key="GridCell.Tab.0.bottom" timestamp="1586696168453">
+    <state width="1065" height="257" key="GridCell.Tab.0.bottom" timestamp="1586746032376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168453" />
-    <state width="1145" height="276" key="GridCell.Tab.0.center" timestamp="1586696168453">
+    <state width="1065" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586746032376" />
+    <state width="1065" height="257" key="GridCell.Tab.0.center" timestamp="1586746032376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168453" />
-    <state width="1145" height="276" key="GridCell.Tab.0.left" timestamp="1586696168452">
+    <state width="1065" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586746032376" />
+    <state width="1065" height="257" key="GridCell.Tab.0.left" timestamp="1586746032375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168452" />
-    <state width="1145" height="276" key="GridCell.Tab.0.right" timestamp="1586696168453">
+    <state width="1065" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586746032375" />
+    <state width="1065" height="257" key="GridCell.Tab.0.right" timestamp="1586746032376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586696168453" />
+    <state width="1065" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586746032376" />
     <state x="1046" y="225" width="647" height="534" key="find.popup" timestamp="1586691931983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render
 
 from webtest.models import WebCase, WebCaseStep
@@ -8,6 +9,15 @@ from webtest.models import WebCase, WebCaseStep
 def web_case_manage(request):
     web_case_list = WebCase.objects.all()
     username = request.session.get("user", "")
+    paginator = Paginator(web_case_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        web_case_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        web_case_list = paginator.page(1)
+    except EmptyPage:
+        web_case_list = paginator.page(paginator.num_pages)
     return render(request, "web_case_manage.html", {
         "user": username,
         "web_cases": web_case_list
@@ -18,6 +28,15 @@ def web_case_manage(request):
 def web_case_step_manage(request):
     web_case_step_list = WebCaseStep.objects.all()
     username = request.session.get("user", "")
+    paginator = Paginator(web_case_step_list, 5)
+    page = request.GET.get("page", 1)
+    currentPage = int(page)
+    try:
+        web_case_step_list = paginator.page(currentPage)
+    except PageNotAnInteger:
+        web_case_step_list = paginator.page(1)
+    except EmptyPage:
+        web_case_step_list = paginator.page(paginator.num_pages)
     return render(request, "web_case_step_manage.html", {
         "user": username,
         "web_case_steps": web_case_step_list
