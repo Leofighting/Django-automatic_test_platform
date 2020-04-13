@@ -67,6 +67,7 @@
                 <th>设置名称</th>
                 <th>设置的值</th>
                 <th>编辑</th>
+                <th>删除</th>
             </tr>
             </thead>
             <tbody>
@@ -77,7 +78,12 @@
                     <td>{{ set.set_value }}</td>
                     <td><a style='color:lightblue' class="related-widget-wrapper-link add-related" id="add_id_Set"
                            href="../admin/set/set/{{ set.id }}/change/?_to_field=id&_popup=1"><img
-                            src="/static/admin/img/iconchangelink.svg"/></a></td>
+                            src="/static/admin/img/iconchangelink.svg"/></a>
+                    </td>
+                    <td><a style='color:lightblue' class="related-widget-wrapper-link add-related" id="add_id_Set"
+                           href="../admin/set/set/{{ set.id }}/delete/?_to_field=id&_popup=1"><img
+                            src="/static/admin/img/icondeletelink.svg"/></a>
+                    </td>
                 </tr>
             {% endfor %}
             </tbody>
