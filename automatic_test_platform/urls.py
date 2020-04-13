@@ -29,27 +29,37 @@ urlpatterns = [
     path("home/", views.home, name="home"),
     path("logout/", views.logout, name="logout"),
     path("left/", views.left, name="left"),
-    # 搜索
-    path("apisearch/", views.apisearch, name="apisearch"),
+
     # 接口测试管理
     path("apitest_manage/", views.apitest_manage, name="apitest_manage"),
     path("apistep_manage/", views.apistep_manage, name="apistep_manage"),
     path("apis_manage/", views.apis_manage, name="apis_manage"),
+    # 搜索
+    path("apisearch/", views.api_search, name="apisearch"),
+    path("apis_search/", views.apis_search, name="apis_search"),
     # 产品管理
     path("product_manage/", pro_views.product_manage, name="product_manage"),
+    path("product_search/", pro_views.product_search, name="product_search"),
     # bug 管理
     path("bug_manage/", bug_views.bug_manage, name="bug_manage"),
+    path("bug_search/", bug_views.bug_search, name="bug_search"),
     # 设置管理
     path("set_manage/", set_views.set_manage, name="set_manage"),
+    path("set_search/", set_views.set_search, name="set_search"),
     # 用户管理
     path("user/", set_views.set_user, name="user"),
+    path("user_search/", set_views.user_search, name="user_search"),
     # app 用例管理
     path("app_case_manage/", app_test_views.app_case_manage, name="app_case_manage"),
     path("app_case_step_manage/", app_test_views.app_case_step_manage, name="app_case_step_manage"),
     path("apptest_report/", app_test_views.apptest_report, name="apptest_report"),
+    path("app_search/", app_test_views.app_search, name="app_search"),
+    path("app_step_search/", app_test_views.app_step_search, name="app_step_search"),
     # web 用例管理
     path("web_case_manage/", web_views.web_case_manage, name="web_case_manage"),
     path("web_case_step_manage/", web_views.web_case_step_manage, name="web_case_step_manage"),
+    path("web_search/", web_views.web_search, name="web_search"),
+    path("web_step_search/", web_views.web_step_search, name="web_step_search"),
     # 测试报告
     path("test_report/", views.test_report, name="test_report"),
 ]
